@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>Array Katas</title>
+</head>
+<body>
+<script>
+    const gotCitiesCSV = "King's Landing,Braavos,Volantis,Old Valyria,Free Cities,Qarth,Meereen";
+    const lotrCitiesArray = ["Mordor","Gondor","Rohan","Beleriand","Mirkwood","Dead Marshes","Rhun","Harad"];
+    const bestThing = "The best thing about a boolean is even if you are wrong you are only off by a bit"
+
+    var kata1 = gotCitiesCSV.split(",");
+    console.log(kata1);
+
+    var kata2 = bestThing.split(" ");
+    console.log(kata2);
+
+    var kata3 = kata1.join(";");
+    console.log(kata3);
+
+    var kata4 = lotrCitiesArray.join(",");
+    console.log(kata4);
+
+    let kata5=[];
+    for (i = 3; i<lotrCitiesArray.length; i++){
+        kata5.push(lotrCitiesArray[i]);
+    }
+    console.log(kata5);
+
+    lotrCitiesArray.splice(2,1);
+    var kata6 = lotrCitiesArray;
+    console.log(lotrCitiesArray);
+
+    var kata7 = bestThing.slice(23,38);
+    console.log(kata7);
+
+    var kata8 = bestThing.indexOf("only");
+    console.log(kata8); 
+
+    let kata9 =[];
+    for (i = 0; i<kata1.length; i++) {
+        if (kata1[i].includes("aa") || kata1[i].includes("ee") || kata1[i].includes("ii") || kata1[i].includes("oo") || kata1[i].includes("uu")) {
+        kata9.push(kata1[i]);
+        }
+    }
+    console.log(kata9);
+
+    var kata10 = lotrCitiesArray.sort();
+    console.log(kata10);
+
+
+
+
+</script>
+</body>
+</html>
